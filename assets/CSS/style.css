@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+
+}
+h1 {
+font-size: 20px;
+
+
+}
+
+.head {
+font-size: 50px;
+color: blue
+
+}
+.intro {
+
+font-size: 30px;
+color: orangered
+
+}
+
+
