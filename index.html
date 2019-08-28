@@ -1,108 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Word GuessGame</title>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
-    <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
-
-    <title>MARVEL IS COOL</title> 
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            background-color: rgb(105, 169, 233);
+        }
+        body {
+            font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+            margin-bottom: 200px;
+        }
+    </style>
 
 </head>
+
+
 <body>
-    <!--MAIN INTRO-->
-<div id="splashscreen">
-    <div class="intro">
-        <h1>LETS GUESS A COMICBOOK CHARACTER</h1>
-        <br>
-        <img src="assets/Images/avengers.jpg" width="65%">
+
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container">
+
+            <header class="display-4 text-center">MARVEL UNIVERSE</header>
+            <br>
+            <p class="lead text-center">CAN YOU GUESS A MARVEL CHARACTER NAME?</p>
+            <p class="lead text-center">| START BY PRESSING KEY | </p>
+            
+            <div class="text-center">
+                <img src="assets/images/avengers.jpg" alt="front page image" height="350px" width="600px">
+            </div>
+
+        </div>
     </div>
-</div> 
 
-    <!--INTRO BUTTON-->
-    <div class="game">
-        <button>PLAYER ONE GO</button>
+    <div class="container h-100">
+
+        <div class="row">
+
+            <div class="col-md-6 text-center">
+
+
+                <p class="font-weight-bold">Wins</p>
+
+                <div id="win-num"></div>
+
+                <p class="font-weight-bold">Current Word</p>
+
+                <div id="word-guess"></div>
+
+                <p class="font-weight-bold">Number of Guesses Remaining </p>
+
+                <div id="guess-left"></div>
+
+                <p class="font-weight-bold">Letters Already Guesses</p>
+
+                <div id="letters-already-guess"></div>
+
+                <br>
+                <br>
+
+                <button id="tryAgain">Try Another Word!</button>
+
+                <br>
+
+                <button id="restartAgain">Restart</button>
+
+            </div>
+
+            <div id="marvel-image" class="col-md-6">
+
+            </div>
+
+        </div>
+
     </div>
 
 
-    <!--GAME-->
-	<div class="container">
+        </div>
 
-        <div class="head"> <h1>Guess the word!</h1></div>
-        <h2>Press Letter to START</h2>
+    </div>
 
-		<div class="center">
-
-			<div class="guessBox">
-
-				<div id="guessWord"> 
-
-				</div>
-
-				<div id="category">
-
-				</div>
-
-                <div id="wins">
-                    <h2>Wins: </h2>
-                    <p>0</p>
-                </div>
-
-                <div id="loss">
-                    <h2>Loss: </h2>
-                    <p>0</p>
-                </div>
-
-                <div id="triesLeft">
-				
-				</div>
-
-				<div id="winLose">
-					
-				</div>
-
-			</div>
-		</div>
-		
-		<div id="letters">
-			<p><strong>Choose a letter:</strong><br></p>
-			<button>A</button>
-			<button>B</button>
-			<button>C</button>
-			<button>D</button>
-			<button>E</button>
-			<button>F</button>
-			<button>G</button>
-			<button>H</button>
-			<button>I</button>
-			<button>J</button>
-			<button>K</button>
-			<button>L</button>
-			<button>M</button>
-			<button>N</button>
-			<button>O</button>
-			<button>P</button>
-			<button>Q</button>
-			<button>R</button>
-			<button>S</button>
-			<button>T</button>
-			<button>U</button>
-			<button>V</button>
-			<button>W</button>
-			<button>X</button>
-			<button>Y</button>
-			<button>Z</button>
-
-		</div>
-
-	</div>
-    <script src="assets/Javascript/game.js"></script>  
-    
-    
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
