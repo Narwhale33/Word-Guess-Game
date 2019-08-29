@@ -353,6 +353,24 @@ var marvelc = [
           "display: block;",
           "captainmarvel"
         );
+
+    } else if (displayDashes === "a n t m a n") {
+        show_image(
+          "assets/Images/antman.jpg",
+          376,
+          450,
+          "display: block;",
+          "antman"
+        );
+
+    } else if (displayDashes === "c a p t a i n a m e r i c a") {
+        show_image(
+          "assets/Images/CaptainSteve.jpg",
+          376,
+          450,
+          "display: block;",
+          "captainamerica"
+        );
         
       }
     } else {
