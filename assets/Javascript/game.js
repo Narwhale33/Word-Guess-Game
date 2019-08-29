@@ -148,9 +148,9 @@ var marvelc = [
           
         } else if (displayLetters === "i r o n m a n") {
           show_image(
-            "assets/Images/ironman.jpeg",
+            "assets/Images/ironman.jpg",
             376,
-            510,
+            450,
             "display: block;",
             "ironman"
           );
@@ -284,9 +284,9 @@ var marvelc = [
         
       } else if (displayDashes === "i r o n m a n") {
         show_image(
-          "assets/Images/ironman.jpeg",
+          "assets/Images/ironman.jpg",
           376,
-          510,
+          450,
           "display: block;",
           "ironman"
         );
@@ -334,6 +334,24 @@ var marvelc = [
           510,
           "display: block;",
           "doctorstrange"
+        );
+
+    } else if (displayDashes === "t h a n o s") {
+        show_image(
+          "assets/Images/thanos.jpg",
+          376,
+          450,
+          "display: block;",
+          "thanos"
+        );
+
+    } else if (displayDashes === "c a p t a i n m a r v e l") {
+        show_image(
+          "assets/Images/captainmar.jpg",
+          376,
+          450,
+          "display: block;",
+          "captainmarvel"
         );
         
       }
