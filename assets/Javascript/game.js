@@ -16,7 +16,7 @@ var marvelc = [
   ];
   
   var winNum = 0;
-  var guessLeft = 12;
+  var guessLeft = 16;
   
   var userGuessArr = []; 
   var computerChoiceDashes = [];
@@ -264,7 +264,7 @@ var marvelc = [
       
       if (displayDashes === displayLetters) {
         winNum += 1;
-        guessLeft = 12;
+        guessLeft = 16;
   
         userGuessArr = [];
   
